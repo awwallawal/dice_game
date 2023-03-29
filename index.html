@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dice Game</title>
+ <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div id="outer-container">
+   <div id="container">
+
+      <h1 id="message">Player's Turn</h1>
+      
+      <div class="players">
+  
+       <div id="player1">
+  
+        <h1 >Score: <span id="player1Scoreboard" >0</span></h1>
+        
+        <div id="player1Dice" class="dice active">-</div>
+  
+       </div>
+  
+       <div id="player2">
+  
+        <h1 >Score: <span id="player2Scoreboard" class="dice">0</span></h1>
+        
+        <div id="player2Dice">-</div>
+  
+       </div>
+  
+      </div>
+  
+      <button id="rollBtn">Roll Dice 🎲</button>
+      <button id="resetBtn">Reset Game 🔄</button>
+     
+   </div>
+   <div id="form-container">
+      <h1>Dice Game🤣 &trade;</h1>
+      <br>
+      <h2>Enter Player Name</h2>
+      <div id="form-el">
+         <form action="" id="player-info">
+            <label for="playerA">Player One Name</label>
+            <input type="text" id="playerA" name="playerA" placeholder="Zack" aria-label="Player A" required>
+            <br>
+            <br>
+            <label for="playerB">Player Two Name</label>
+            <input type="text" id="playerB" name="playerB" placeholder="Ken" aria-label="Player B" required>
+            <br>
+            <br>
+            <button>Start Game</button>
+      
+         </form>
+       </div>
+   </div>
+   
+</div>
+ 
+
+ <script src="./script.js"></script>
+</body>
+</html>
